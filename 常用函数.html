@@ -1,0 +1,72 @@
+<h1>哈希表</h1>
+
+<h2>map</h2>
+<p><code>map</code>是 C++ 标准库中的一个关联容器，用于存储键值对，键是唯一的，且按键的升序排列。</p>
+<ol>
+  <li><code>m[key] = value</code>：将键 <code>key</code> 对应的值设置为 <code>value</code>。</li>
+  <li><code>m.insert({key, value})</code>：将键值对 <code>{key, value}</code> 插入到 <code>map</code> 中。</li>
+  <li><code>m.erase(key)</code>：从 <code>map</code> 中删除键为 <code>key</code> 的元素。</li>
+  <li><code>m.count(key)</code>：返回 <code>map</code> 中键为 <code>key</code> 的元素个数。</li>
+  <li><code>m.find(key)</code>：返回指向 <code>map</code> 中键为 <code>key</code> 的元素的迭代器，如果 <code>key</code> 不存在则返回 <code>m.end()</code>。</li>
+  <li><code>m.lower_bound(key)</code>：返回指向 <code>map</code> 中第一个不小于 <code>key</code> 的元素的迭代器。</li>
+  <li><code>m.upper_bound(key)</code>：返回指向 <code>map</code> 中第一个大于 <code>key</code> 的元素的迭代器。</li>
+</ol>
+
+<h2>unordered_map</h2>
+<p><code>unordered_map</code> 是 C++ 标准库中的一个关联容器，用于存储键值对，键是唯一的。</p>
+<ol>
+  <li><code>umap[key] = value</code>：将键 <code>key</code> 对应的值设置为 <code>value</code>。</li>
+  <li><code>umap.insert({key, value})</code>：将键值对 <code>{key, value}</code> 插入到 <code>unordered_map</code> 中。</li>
+  <li><code>umap.erase(key)</code>：从 <code>unordered_map</code> 中删除键为 <code>key</code> 的元素。</li>
+  <li><code>umap.count(key)</code>：返回 <code>unordered_map</code> 中键为 <code>key</code> 的元素个数。</li>
+  <li><code>umap.find(key)</code>：返回指向 <code>unordered_map</code> 中键为 <code>key</code> 的元素的迭代器，如果 <code>key</code> 不存在则返回 <code>umap.end()</code>。</li>
+  <li><code>umap.size()</code>：返回 <code>unordered_map</code> 中元素的个数。</li>
+</ol>
+
+<h2>set</h2>
+<p><code>set</code> 是 C++ 标准库中的一个关联容器，用于存储唯一的元素。</p>
+<pre><code>set&lt;int&gt; nums;</code></pre>
+<ol>
+  <li><code>nums.insert(x)</code>：将元素 x 插入到集合 nums 中。</li>
+  <li><code>nums.erase(x)</code>：从集合 nums 中删除元素 x。</li>
+  <li><code>nums.count(x)</code>：返回集合 nums 中元素 x 的个数。</li>
+  <li><code>nums.find(x)</code>：返回指向集合 nums 中元素 x 的迭代器，如果 x 不存在则返回 <code>nums.end()</code>。</li>
+  <li><code>nums.lower_bound(x)</code>：返回指向集合 nums 中第一个不小于 x 的元素的迭代器。</li>
+</ol>
+
+<h2>emplace_back</h2>
+<p><code>emplace_back</code> 是 C++ 标准库中 <code>std::vector</code>、<code>std::deque</code>、<code>std::list</code> 等容器的一个成员函数，用于在容器的末尾直接构造一个元素，而不是先创建一个临时对象再插入。这样可以避免不必要的拷贝或移动操作，提高效率。</p>
+
+<h2>queue</h2>
+<p><code>queue</code> 是 C++ 标准库中的一个容器适配器，用于实现先进先出（FIFO）的队列。</p>
+<pre><code>queue&lt;int&gt; q;</code></pre>
+<ol>
+  <li><code>q.push(x)</code>：将元素 x 入队。</li>
+  <li><code>q.pop()</code>：将队首元素出队。</li>
+  <li><code>q.front()</code>：返回队首元素的引用。</li>
+  <li><code>q.back()</code>：返回队尾元素的引用。</li>
+  <li><code>q.empty()</code>：检查队列是否为空，返回布尔值。</li>
+  <li><code>q.size()</code>：返回队列中元素的个数。</li>
+</ol>
+
+<h2>priority_queue</h2>
+<p><code>priority_queue</code> 是 C++ 标准库中的一个容器适配器，用于实现优先队列。</p>
+<pre><code>priority_queue&lt;int&gt; pq;</code></pre>
+<ol>
+  <li><code>pq.push(x)</code>：将元素 x 入队，并按优先级排序。</li>
+  <li><code>pq.pop()</code>：将优先级最高的元素出队。</li>
+  <li><code>pq.top()</code>：返回优先级最高的元素的引用。</li>
+  <li><code>pq.empty()</code>：检查优先队列是否为空，返回布尔值。</li>
+  <li><code>pq.size()</code>：返回优先队列中元素的个数。</li>
+</ol>
+
+<h2>stack</h2>
+<p><code>stack</code> 是 C++ 标准库中的一个容器适配器，用于实现后进先出（LIFO）的栈。</p>
+<pre><code>stack&lt;int&gt; s;</code></pre>
+<ol>
+  <li><code>s.push(x)</code>：将元素 x 压入栈顶。</li>
+  <li><code>s.pop()</code>：弹出栈顶元素。</li>
+  <li><code>s.top()</code>：返回栈顶元素的引用。</li>
+  <li><code>s.empty()</code>：检查栈是否为空，返回布尔值。</li>
+  <li><code>s.size()</code>：返回栈中元素的个数。</li>
+</ol>
