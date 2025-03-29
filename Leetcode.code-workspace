@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://wsl+ubuntu2204/home/serenNan/Projects/Leetcode"
+		},
+		{
+			"name": ".lcpr",
+			"uri": "vscode-remote://wsl+ubuntu2204/home/serenNan/.lcpr"
+		}
+	],
+	"remoteAuthority": "wsl+ubuntu2204",
+	"settings": {
+		"files.associations": {
+			"unordered_set": "cpp",
+			"utility": "cpp",
+			"unordered_map": "cpp",
+			"tuple": "cpp",
+			"list": "cpp"
+		}
+	}
+}
